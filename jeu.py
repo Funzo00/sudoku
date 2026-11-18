@@ -28,7 +28,9 @@ def donner_indice(grille, solution):
 
 def formater_temps(secondes):
     """Transforme un nombre de secondes en texte 'MM:SS'."""
-    pass
+    minutes = secondes // 60
+    reste = secondes % 60
+    return f"{minutes:02d}:{reste:02d}"
 
 
 def calculer_score(temps, erreurs, niveau):
